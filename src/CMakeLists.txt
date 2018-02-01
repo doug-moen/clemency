@@ -21,7 +21,8 @@ if(OPENCL_FOUND)
   target_link_libraries(clmc Boost::program_options ${OPENCL_LIBRARIES} clemency gloop_model)
 endif()
 
-if(OPENCL_FOUND)
-  add_executable       (clmc-dif opencl_dif.cpp mc_table.cpp)
-  target_link_libraries(clmc-dif Boost::program_options ${OPENCL_LIBRARIES} clemency gloop_model)
-endif()
+## opencl_dif.cpp source file does not exist
+#if(OPENCL_FOUND)
+#  add_executable       (clmc-dif opencl_dif.cpp mc_table.cpp)
+#  target_link_libraries(clmc-dif Boost::program_options ${OPENCL_LIBRARIES} clemency gloop_model)
+#endif()

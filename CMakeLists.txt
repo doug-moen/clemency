@@ -16,6 +16,7 @@ set(CLEMENCY_VERSION ${clemency_VERSION_MAJOR}.${clemency_VERSION_MINOR}.${cleme
 option(BUILD_COVERAGE                    "Compile with gcov"                                 OFF)
 
 enable_language(CXX)
+set(CMAKE_CXX_STANDARD 11)
 
 if (BUILD_COVERAGE)
   set(BUILD_SHARED_LIBS OFF)
